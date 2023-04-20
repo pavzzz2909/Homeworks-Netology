@@ -25,14 +25,14 @@ class Student:
             else:
                 lecturer.grades[course] = [grade]
         else:
-            return 'Ошибка'
+            return 'пїЅпїЅпїЅпїЅпїЅпїЅ'
 
     def __str__(self):
-        return f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за домашние задания: {self.av_grade}\nКурсы в процессе изучения: {", ".join(self.courses_in_progress)}\nЗакончил курсы: {", ".join(self.finished_courses)}\n'
+        return f'пїЅпїЅпїЅ: {self.name}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {self.surname}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {self.av_grade}\nпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {", ".join(self.courses_in_progress)}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: {", ".join(self.finished_courses)}\n'
 
     def __lt__(self, other):
         if not isinstance(other, Student):
-            print("Второй не является студентом")
+            print("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")
             return
         return self.av_grade < other.av_grade
 
@@ -49,11 +49,11 @@ class Lecturer(Mentor):
         self.av_grade = 0
 
     def __str__(self):
-        return f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {self.av_grade}\n'
+        return f'пїЅпїЅпїЅ: {self.name}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {self.surname}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: {self.av_grade}\n'
 
     def __lt__(self, other):
         if not isinstance(other, Lecturer):
-            print("Второй не является лектором")
+            print("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")
             return
         return self.av_grade < other.av_grade
 
@@ -75,15 +75,15 @@ class Reviewer(Mentor):
             else:
                 student.grades[course] = [grade]
         else:
-            return 'Ошибка'
+            return 'пїЅпїЅпїЅпїЅпїЅпїЅ'
     def __str__(self):
-        return f'Имя: {self.name}\nФамилия: {self.surname}\n'
+        return f'пїЅпїЅпїЅ: {self.name}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: {self.surname}\n'
 
 
-best_student = Student('Иван', 'Иванов', 'муж')
+best_student = Student('пїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅ')
 best_student.courses_in_progress += ['Python']
 best_student.courses_in_progress += ['Java']
-best_student.finished_courses += ['SQL']
+best_student.finished_courses += ['4 Р“СЂСѓРїРїРёСЂРѕРІРєРё, РІС‹Р±РѕСЂРєРё РёР· РЅРµСЃРєРѕР»СЊРєРёС… С‚Р°Р±Р»РёС†']
 
 cool_lecturer = Lecturer('lecturer 1', 'lecturer 11')
 cool_lecturer.courses_attached += ['Python']
@@ -106,8 +106,8 @@ print(best_student)
 print(cool_lecturer)
 print(cool_reviewer)
 
-best_student2 = Student('Пётр', 'Петров', 'муж')
-best_student2.courses_in_progress += ['Английский для программистов']
+best_student2 = Student('ПёпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅ')
+best_student2.courses_in_progress += ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ']
 best_student2.courses_in_progress += ['Python']
 best_student2.finished_courses += ['GIT']
 
