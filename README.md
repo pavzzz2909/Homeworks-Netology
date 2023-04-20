@@ -9,5 +9,3 @@
 4. [Django создание функциональных веб-приложений](https://github.com/pavzzz2909/Homeworks-Netology/tree/master/4%20Django%20создание%20функциональных%20веб-приложений)
 5. [Python в web разработке](https://github.com/pavzzz2909/Homeworks-Netology/tree/master/5%20Python%20в%20web%20разработке)
 
-Ну а это результат обучения
-![](https://u.netology.ru/backend/uploads/legacy/shared_diplomas/image/211335/907991cc001f40c69c4f9c0a3cd795a8.png?ts=1667670344)
