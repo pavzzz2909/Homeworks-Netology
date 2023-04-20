@@ -1,7 +1,7 @@
 # Домашние, курсовые и дипломная работы
 ## по курсу Нетологии "Python Разработчик с нуля"
 
-## Состав работ:
+## Состав курса:
 
 1. [Основы языка программирования Python](https://github.com/pavzzz2909/Homeworks-Netology/tree/master/1%20Основы%20языка%20программирования%20Python)
 2. [Базы данных для Python разработчиков](https://github.com/pavzzz2909/Homeworks-Netology/tree/master/2%20Базы%20данных%20для%20Python%20разработчиков)
